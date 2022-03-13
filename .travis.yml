@@ -7,4 +7,4 @@ before_install:
   - docker build -t rafeeqce/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true rafeeqce/docker-react npm test
+  - docker run rafeeqce/docker-react npm test -- --coverage
